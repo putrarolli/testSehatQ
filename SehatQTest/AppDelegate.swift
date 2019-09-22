@@ -8,6 +8,9 @@
 
 import UIKit
 import CoreData
+import FBSDKShareKit
+import FBSDKLoginKit
+import FBSDKCoreKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -114,6 +117,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
+    
+    //MARK: - FACEBOOK
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        let str_URL = url.absoluteString as NSString
+        if str_URL.contains("fb2515750258490677") {
+            return FBSDKApplicationDelegate.sharedInstance().application(
+            app,
+            open: url as URL?,
+            sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as! String,
+            annotation: options[UIApplicationOpenURLOptionsKey.annotation])
+        }
+    
+        return FBSDKApplicationDelegate.sharedInstance().application(
+            app,
+            open: url as URL?,
+            sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as! String,
+            annotation: options[UIApplicationOpenURLOptionsKey.annotation])
+    
+        }
 
 }
 

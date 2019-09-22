@@ -7,6 +7,10 @@ target 'SehatQTest' do
 
   # Pods for SehatQTest
   
-  pod 'FBSDKLoginKit'
+#  pod 'FBSDKCoreKit'
+#  pod 'FBSDKLoginKit'
+pod 'FBSDKCoreKit', '~> 4.10.0'
+pod 'FBSDKLoginKit', '~> 4.10.0'
+pod 'FBSDKShareKit', '~> 4.10.0'
 
 end

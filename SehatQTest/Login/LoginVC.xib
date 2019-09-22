@@ -64,6 +64,9 @@
                     <state key="normal" title="Facebook">
                         <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
                     </state>
+                    <connections>
+                        <action selector="login:" destination="-1" eventType="touchUpInside" id="bRS-3b-b5l"/>
+                    </connections>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L0I-Xg-U6H">
                     <rect key="frame" x="163" y="105" width="50" height="40"/>
