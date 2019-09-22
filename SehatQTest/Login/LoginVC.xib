@@ -52,6 +52,9 @@
                     <state key="normal" title="Login">
                         <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
                     </state>
+                    <connections>
+                        <action selector="loginBtnOnClickWithSender:" destination="-1" eventType="touchUpInside" id="tSG-Wr-GVM"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="geZ-2q-nf1">
                     <rect key="frame" x="42" y="567" width="104" height="40"/>

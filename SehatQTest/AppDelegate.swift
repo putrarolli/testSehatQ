@@ -29,8 +29,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if (isLogin) {
             window?.rootViewController = tabBarController
             
-            let tabViewController1 = FavoritesVC()
-            let tabViewController2 = DownloadsVC()
+            let tabViewController1 = HomeVC()
+            let tabViewController2 = HistoryVC()
             
             let controllers = [tabViewController1,tabViewController2]
             tabBarController.viewControllers = controllers

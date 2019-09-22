@@ -9,11 +9,11 @@
 import Foundation
 import UIKit
 
-class FavoritesVC: UIViewController {
+class HomeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.gray
+        
     }
     
 }
