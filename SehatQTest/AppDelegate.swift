@@ -11,6 +11,7 @@ import CoreData
 import FBSDKShareKit
 import FBSDKLoginKit
 import FBSDKCoreKit
+import GoogleSignIn
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -46,6 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             window?.rootViewController = homeViewController
         }
         window?.makeKeyAndVisible()
+        
         return true
     }
 
@@ -135,7 +137,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as! String,
             annotation: options[UIApplicationOpenURLOptionsKey.annotation])
     
-        }
+    }
+    
+    func application(_ application: UIApplication,
+                     open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+
+        return GIDSignIn.sharedInstance().handle(url, sourceApplication: sourceApplication, annotation: annotation)
+    }
+    
 
 }
 

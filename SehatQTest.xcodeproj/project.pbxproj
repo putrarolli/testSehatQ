@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		8646B509529FDA5328843600 /* Pods_SehatQTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC70BBD23FD803D7BB7CB16 /* Pods_SehatQTest.framework */; };
 		BAF1F7B123369CEC008BD1FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF1F7B023369CEC008BD1FF /* AppDelegate.swift */; };
-		BAF1F7B323369CEC008BD1FF /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF1F7B223369CEC008BD1FF /* HomeVC.swift */; };
 		BAF1F7B923369CEC008BD1FF /* SehatQTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BAF1F7B723369CEC008BD1FF /* SehatQTest.xcdatamodeld */; };
 		BAF1F7BB23369CED008BD1FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAF1F7BA23369CED008BD1FF /* Assets.xcassets */; };
 		BAF1F7BE23369CED008BD1FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAF1F7BC23369CED008BD1FF /* LaunchScreen.storyboard */; };
@@ -17,6 +16,11 @@
 		BAF1F7C92336A4D3008BD1FF /* FavoritesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF1F7C82336A4D3008BD1FF /* FavoritesVC.swift */; };
 		BAF1F7CB2336A4EC008BD1FF /* DownloadsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF1F7CA2336A4EC008BD1FF /* DownloadsVC.swift */; };
 		BAF1F7D0233754A6008BD1FF /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAF1F7CF233754A6008BD1FF /* LoginVC.xib */; };
+		BAF1F7D22337EB28008BD1FF /* klien_265540153209-kf9n617pqjqai36cfepi06j9sre44ikl.apps.googleusercontent.com.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAF1F7D12337EB27008BD1FF /* klien_265540153209-kf9n617pqjqai36cfepi06j9sre44ikl.apps.googleusercontent.com.plist */; };
+		BAF1F7D52337F51D008BD1FF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF1F7D42337F51D008BD1FF /* StoreKit.framework */; };
+		BAF1F7D72337F528008BD1FF /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF1F7D62337F528008BD1FF /* AddressBook.framework */; };
+		BAF1F7D92337F530008BD1FF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF1F7D82337F530008BD1FF /* SystemConfiguration.framework */; };
+		BAF1F7DC2337FCCB008BD1FF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF1F7DB2337FCCB008BD1FF /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +29,6 @@
 		8AC70BBD23FD803D7BB7CB16 /* Pods_SehatQTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SehatQTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAF1F7AD23369CEC008BD1FF /* SehatQTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SehatQTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAF1F7B023369CEC008BD1FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BAF1F7B223369CEC008BD1FF /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		BAF1F7B823369CEC008BD1FF /* SehatQTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SehatQTest.xcdatamodel; sourceTree = "<group>"; };
 		BAF1F7BA23369CED008BD1FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAF1F7BD23369CED008BD1FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -34,6 +37,12 @@
 		BAF1F7C82336A4D3008BD1FF /* FavoritesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesVC.swift; sourceTree = "<group>"; };
 		BAF1F7CA2336A4EC008BD1FF /* DownloadsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsVC.swift; sourceTree = "<group>"; };
 		BAF1F7CF233754A6008BD1FF /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
+		BAF1F7D12337EB27008BD1FF /* klien_265540153209-kf9n617pqjqai36cfepi06j9sre44ikl.apps.googleusercontent.com.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "klien_265540153209-kf9n617pqjqai36cfepi06j9sre44ikl.apps.googleusercontent.com.plist"; path = "../../../Documents/gambar tas/klien_265540153209-kf9n617pqjqai36cfepi06j9sre44ikl.apps.googleusercontent.com.plist"; sourceTree = "<group>"; };
+		BAF1F7D32337EE92008BD1FF /* SehatQBridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SehatQBridgingHeader.h; path = ../../../Documents/IOS/Manis/Manis/SehatQBridgingHeader.h; sourceTree = "<group>"; };
+		BAF1F7D42337F51D008BD1FF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		BAF1F7D62337F528008BD1FF /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		BAF1F7D82337F530008BD1FF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BAF1F7DB2337FCCB008BD1FF /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +50,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAF1F7D92337F530008BD1FF /* SystemConfiguration.framework in Frameworks */,
+				BAF1F7D72337F528008BD1FF /* AddressBook.framework in Frameworks */,
+				BAF1F7D52337F51D008BD1FF /* StoreKit.framework in Frameworks */,
 				8646B509529FDA5328843600 /* Pods_SehatQTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,6 +63,9 @@
 		459022D61E4D31C1C60F9194 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BAF1F7D82337F530008BD1FF /* SystemConfiguration.framework */,
+				BAF1F7D62337F528008BD1FF /* AddressBook.framework */,
+				BAF1F7D42337F51D008BD1FF /* StoreKit.framework */,
 				8AC70BBD23FD803D7BB7CB16 /* Pods_SehatQTest.framework */,
 			);
 			name = Frameworks;
@@ -86,10 +101,12 @@
 		BAF1F7AF23369CEC008BD1FF /* SehatQTest */ = {
 			isa = PBXGroup;
 			children = (
+				BAF1F7DA2337FCAB008BD1FF /* Base */,
+				BAF1F7D32337EE92008BD1FF /* SehatQBridgingHeader.h */,
+				BAF1F7D12337EB27008BD1FF /* klien_265540153209-kf9n617pqjqai36cfepi06j9sre44ikl.apps.googleusercontent.com.plist */,
 				BAF1F7CC23375320008BD1FF /* Login */,
 				BAF1F7C72336A4B6008BD1FF /* Home */,
 				BAF1F7B023369CEC008BD1FF /* AppDelegate.swift */,
-				BAF1F7B223369CEC008BD1FF /* HomeVC.swift */,
 				BAF1F7BA23369CED008BD1FF /* Assets.xcassets */,
 				BAF1F7BC23369CED008BD1FF /* LaunchScreen.storyboard */,
 				BAF1F7BF23369CED008BD1FF /* Info.plist */,
@@ -116,6 +133,14 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		BAF1F7DA2337FCAB008BD1FF /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				BAF1F7DB2337FCCB008BD1FF /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -128,6 +153,7 @@
 				BAF1F7AA23369CEC008BD1FF /* Frameworks */,
 				BAF1F7AB23369CEC008BD1FF /* Resources */,
 				3DA6203C103CA4481ADD3EA1 /* [CP] Embed Pods Frameworks */,
+				03D5E8035F9839F0AE2B642C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -178,6 +204,7 @@
 			files = (
 				BAF1F7D0233754A6008BD1FF /* LoginVC.xib in Resources */,
 				BAF1F7BE23369CED008BD1FF /* LaunchScreen.storyboard in Resources */,
+				BAF1F7D22337EB28008BD1FF /* klien_265540153209-kf9n617pqjqai36cfepi06j9sre44ikl.apps.googleusercontent.com.plist in Resources */,
 				BAF1F7BB23369CED008BD1FF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,18 +212,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		03D5E8035F9839F0AE2B642C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP] Copy Pods Resources";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SehatQTest/Pods-SehatQTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3DA6203C103CA4481ADD3EA1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SehatQTest/Pods-SehatQTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SehatQTest/Pods-SehatQTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SehatQTest/Pods-SehatQTest-frameworks.sh\"\n";
@@ -228,10 +260,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAF1F7CB2336A4EC008BD1FF /* DownloadsVC.swift in Sources */,
-				BAF1F7B323369CEC008BD1FF /* HomeVC.swift in Sources */,
 				BAF1F7B123369CEC008BD1FF /* AppDelegate.swift in Sources */,
 				BAF1F7C62336A224008BD1FF /* LoginVC.swift in Sources */,
 				BAF1F7B923369CEC008BD1FF /* SehatQTest.xcdatamodeld in Sources */,
+				BAF1F7DC2337FCCB008BD1FF /* BaseViewController.swift in Sources */,
 				BAF1F7C92336A4D3008BD1FF /* FavoritesVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
