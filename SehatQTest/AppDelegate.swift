@@ -17,6 +17,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let homeViewController = LoginVC()
+        let tabBarController = UITabBarController()
+        let isLogin = false
+        
+        if (isLogin) {
+            window?.rootViewController = tabBarController
+            
+            let tabViewController1 = FavoritesVC()
+            let tabViewController2 = DownloadsVC()
+            
+            let controllers = [tabViewController1,tabViewController2]
+            tabBarController.viewControllers = controllers
+            window?.rootViewController = tabBarController
+            tabViewController1.tabBarItem = UITabBarItem(
+                title: "Pie",
+                image: UIImage(named: "pie_bar_icon"),
+                tag: 1)
+            tabViewController2.tabBarItem = UITabBarItem(
+                title: "Pizza",
+                image:UIImage(named: "pizza_bar_icon") ,
+                tag:2)
+        }else {
+            window?.rootViewController = homeViewController
+        }
+        window?.makeKeyAndVisible()
         return true
     }
 

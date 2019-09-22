@@ -7,23 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8646B509529FDA5328843600 /* Pods_SehatQTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC70BBD23FD803D7BB7CB16 /* Pods_SehatQTest.framework */; };
 		BAF1F7B123369CEC008BD1FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF1F7B023369CEC008BD1FF /* AppDelegate.swift */; };
-		BAF1F7B323369CEC008BD1FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF1F7B223369CEC008BD1FF /* ViewController.swift */; };
-		BAF1F7B623369CEC008BD1FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAF1F7B423369CEC008BD1FF /* Main.storyboard */; };
+		BAF1F7B323369CEC008BD1FF /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF1F7B223369CEC008BD1FF /* HomeVC.swift */; };
 		BAF1F7B923369CEC008BD1FF /* SehatQTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BAF1F7B723369CEC008BD1FF /* SehatQTest.xcdatamodeld */; };
 		BAF1F7BB23369CED008BD1FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAF1F7BA23369CED008BD1FF /* Assets.xcassets */; };
 		BAF1F7BE23369CED008BD1FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAF1F7BC23369CED008BD1FF /* LaunchScreen.storyboard */; };
+		BAF1F7C62336A224008BD1FF /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF1F7C52336A224008BD1FF /* LoginVC.swift */; };
+		BAF1F7C92336A4D3008BD1FF /* FavoritesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF1F7C82336A4D3008BD1FF /* FavoritesVC.swift */; };
+		BAF1F7CB2336A4EC008BD1FF /* DownloadsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF1F7CA2336A4EC008BD1FF /* DownloadsVC.swift */; };
+		BAF1F7D0233754A6008BD1FF /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAF1F7CF233754A6008BD1FF /* LoginVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F3848B68949E7A604D83F71 /* Pods-SehatQTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SehatQTest.release.xcconfig"; path = "Target Support Files/Pods-SehatQTest/Pods-SehatQTest.release.xcconfig"; sourceTree = "<group>"; };
+		64A2B169390E583E3C93391D /* Pods-SehatQTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SehatQTest.debug.xcconfig"; path = "Target Support Files/Pods-SehatQTest/Pods-SehatQTest.debug.xcconfig"; sourceTree = "<group>"; };
+		8AC70BBD23FD803D7BB7CB16 /* Pods_SehatQTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SehatQTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAF1F7AD23369CEC008BD1FF /* SehatQTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SehatQTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAF1F7B023369CEC008BD1FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BAF1F7B223369CEC008BD1FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BAF1F7B523369CEC008BD1FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BAF1F7B223369CEC008BD1FF /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		BAF1F7B823369CEC008BD1FF /* SehatQTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SehatQTest.xcdatamodel; sourceTree = "<group>"; };
 		BAF1F7BA23369CED008BD1FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAF1F7BD23369CED008BD1FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAF1F7BF23369CED008BD1FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAF1F7C52336A224008BD1FF /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		BAF1F7C82336A4D3008BD1FF /* FavoritesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesVC.swift; sourceTree = "<group>"; };
+		BAF1F7CA2336A4EC008BD1FF /* DownloadsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsVC.swift; sourceTree = "<group>"; };
+		BAF1F7CF233754A6008BD1FF /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8646B509529FDA5328843600 /* Pods_SehatQTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		459022D61E4D31C1C60F9194 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8AC70BBD23FD803D7BB7CB16 /* Pods_SehatQTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		809AF15367399D9DE7678C4C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				64A2B169390E583E3C93391D /* Pods-SehatQTest.debug.xcconfig */,
+				5F3848B68949E7A604D83F71 /* Pods-SehatQTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BAF1F7A423369CEC008BD1FF = {
 			isa = PBXGroup;
 			children = (
 				BAF1F7AF23369CEC008BD1FF /* SehatQTest */,
 				BAF1F7AE23369CEC008BD1FF /* Products */,
+				809AF15367399D9DE7678C4C /* Pods */,
+				459022D61E4D31C1C60F9194 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +86,34 @@
 		BAF1F7AF23369CEC008BD1FF /* SehatQTest */ = {
 			isa = PBXGroup;
 			children = (
+				BAF1F7CC23375320008BD1FF /* Login */,
+				BAF1F7C72336A4B6008BD1FF /* Home */,
 				BAF1F7B023369CEC008BD1FF /* AppDelegate.swift */,
-				BAF1F7B223369CEC008BD1FF /* ViewController.swift */,
-				BAF1F7B423369CEC008BD1FF /* Main.storyboard */,
+				BAF1F7B223369CEC008BD1FF /* HomeVC.swift */,
 				BAF1F7BA23369CED008BD1FF /* Assets.xcassets */,
 				BAF1F7BC23369CED008BD1FF /* LaunchScreen.storyboard */,
 				BAF1F7BF23369CED008BD1FF /* Info.plist */,
 				BAF1F7B723369CEC008BD1FF /* SehatQTest.xcdatamodeld */,
 			);
 			path = SehatQTest;
+			sourceTree = "<group>";
+		};
+		BAF1F7C72336A4B6008BD1FF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BAF1F7C82336A4D3008BD1FF /* FavoritesVC.swift */,
+				BAF1F7CA2336A4EC008BD1FF /* DownloadsVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BAF1F7CC23375320008BD1FF /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				BAF1F7C52336A224008BD1FF /* LoginVC.swift */,
+				BAF1F7CF233754A6008BD1FF /* LoginVC.xib */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +123,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BAF1F7C223369CED008BD1FF /* Build configuration list for PBXNativeTarget "SehatQTest" */;
 			buildPhases = (
+				F36116F08AEC176A198C33B4 /* [CP] Check Pods Manifest.lock */,
 				BAF1F7A923369CEC008BD1FF /* Sources */,
 				BAF1F7AA23369CEC008BD1FF /* Frameworks */,
 				BAF1F7AB23369CEC008BD1FF /* Resources */,
@@ -125,36 +175,52 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAF1F7D0233754A6008BD1FF /* LoginVC.xib in Resources */,
 				BAF1F7BE23369CED008BD1FF /* LaunchScreen.storyboard in Resources */,
 				BAF1F7BB23369CED008BD1FF /* Assets.xcassets in Resources */,
-				BAF1F7B623369CEC008BD1FF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F36116F08AEC176A198C33B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SehatQTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BAF1F7A923369CEC008BD1FF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAF1F7B323369CEC008BD1FF /* ViewController.swift in Sources */,
+				BAF1F7CB2336A4EC008BD1FF /* DownloadsVC.swift in Sources */,
+				BAF1F7B323369CEC008BD1FF /* HomeVC.swift in Sources */,
 				BAF1F7B123369CEC008BD1FF /* AppDelegate.swift in Sources */,
+				BAF1F7C62336A224008BD1FF /* LoginVC.swift in Sources */,
 				BAF1F7B923369CEC008BD1FF /* SehatQTest.xcdatamodeld in Sources */,
+				BAF1F7C92336A4D3008BD1FF /* FavoritesVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BAF1F7B423369CEC008BD1FF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BAF1F7B523369CEC008BD1FF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BAF1F7BC23369CED008BD1FF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,10 +348,13 @@
 		};
 		BAF1F7C323369CED008BD1FF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64A2B169390E583E3C93391D /* Pods-SehatQTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 265TZA7NAT;
 				INFOPLIST_FILE = SehatQTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,10 +368,13 @@
 		};
 		BAF1F7C423369CED008BD1FF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F3848B68949E7A604D83F71 /* Pods-SehatQTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 265TZA7NAT;
 				INFOPLIST_FILE = SehatQTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

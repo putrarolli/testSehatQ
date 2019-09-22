@@ -1,5 +1,5 @@
 //
-//  LoginVC.swift
+//  downloadsVC.swift
 //  SehatQTest
 //
 //  Created by putra rolli on 22/09/19.
@@ -7,3 +7,5 @@
 //
 
 import Foundation
+
+class 
