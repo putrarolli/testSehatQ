@@ -36,12 +36,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             tabBarController.viewControllers = controllers
             window?.rootViewController = tabBarController
             tabViewController1.tabBarItem = UITabBarItem(
-                title: "Pie",
-                image: UIImage(named: "pie_bar_icon"),
+                title: "Home",
+                image: UIImage(named: "home"),
                 tag: 1)
             tabViewController2.tabBarItem = UITabBarItem(
-                title: "Pizza",
-                image:UIImage(named: "pizza_bar_icon") ,
+                title: "Spending",
+                image:UIImage(named: "spending") ,
                 tag:2)
         }else {
             window?.rootViewController = homeViewController

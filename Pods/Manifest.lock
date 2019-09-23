@@ -1,4 +1,8 @@
 PODS:
+  - Alamofire (4.5.0)
+  - AlamofireObjectMapper (5.1.0):
+    - Alamofire (~> 4.1)
+    - ObjectMapper (~> 3.3)
   - Bolts (1.9.0):
     - Bolts/AppLinks (= 1.9.0)
     - Bolts/Tasks (= 1.9.0)
@@ -39,15 +43,27 @@ PODS:
     - "GoogleToolboxForMac/NSString+URLArguments (= 2.2.1)"
   - "GoogleToolboxForMac/NSString+URLArguments (2.2.1)"
   - GTMSessionFetcher/Core (1.2.2)
+  - JGProgressHUD (2.0.4)
+  - ObjectMapper (3.5.1)
+  - SDWebImage (5.1.1):
+    - SDWebImage/Core (= 5.1.1)
+  - SDWebImage/Core (5.1.1)
 
 DEPENDENCIES:
+  - Alamofire (= 4.5.0)
+  - AlamofireObjectMapper
   - FBSDKCoreKit (~> 4.10.0)
   - FBSDKLoginKit (~> 4.10.0)
   - FBSDKShareKit (~> 4.10.0)
   - Google/SignIn
+  - JGProgressHUD
+  - ObjectMapper
+  - SDWebImage (~> 5.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireObjectMapper
     - Bolts
     - FBSDKCoreKit
     - FBSDKLoginKit
@@ -59,8 +75,13 @@ SPEC REPOS:
     - GoogleSignIn
     - GoogleToolboxForMac
     - GTMSessionFetcher
+    - JGProgressHUD
+    - ObjectMapper
+    - SDWebImage
 
 SPEC CHECKSUMS:
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  AlamofireObjectMapper: 3395e698901d8b0e6f48b7d0c43bd47875325102
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   FBSDKCoreKit: d2aaed5e9ab7d8d6301c533376a1fbff1cf3deb5
   FBSDKLoginKit: 699ff169080e3072de4b9b0faca90bf23dc36deb
@@ -72,7 +93,10 @@ SPEC CHECKSUMS:
   GoogleSignIn: 7ff245e1a7b26d379099d3243a562f5747e23d39
   GoogleToolboxForMac: b3553629623a3b1bff17f555e736cd5a6d95ad55
   GTMSessionFetcher: 61bb0f61a4cb560030f1222021178008a5727a23
+  JGProgressHUD: 62658b14e72cccf179efc7a13bcb54d30b92fc22
+  ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
+  SDWebImage: 96d7f03415ccb28d299d765f93557ff8a617abd8
 
-PODFILE CHECKSUM: ccab1afc673821135bc759efb6330d737f5ae687
+PODFILE CHECKSUM: dd5d532233982833b6d36b4e4f3175127dbdf1d2
 
 COCOAPODS: 1.7.5

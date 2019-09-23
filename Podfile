@@ -11,5 +11,10 @@ pod 'FBSDKCoreKit', '~> 4.10.0'
 pod 'FBSDKLoginKit', '~> 4.10.0'
 pod 'FBSDKShareKit', '~> 4.10.0'
 pod 'Google/SignIn'
+pod 'Alamofire', '4.5.0'
+pod 'AlamofireObjectMapper'
+pod 'ObjectMapper'
+pod 'SDWebImage', '~> 5.0'
+pod 'JGProgressHUD'
 
 end

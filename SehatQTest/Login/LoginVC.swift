@@ -43,11 +43,11 @@ class LoginVC: BaseViewController {
         window?.rootViewController = tabBarController
         tabViewController1.tabBarItem = UITabBarItem(
             title: "Home",
-            image: UIImage(named: "pie_bar_icon"),
+            image: UIImage(named: "home"),
             tag: 1)
         tabViewController2.tabBarItem = UITabBarItem(
-            title: "History",
-            image:UIImage(named: "pizza_bar_icon") ,
+            title: "Spending",
+            image:UIImage(named: "spending") ,
             tag:2)
         window?.makeKeyAndVisible()
     }

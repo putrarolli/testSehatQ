@@ -21,6 +21,14 @@
 		BAF1F7D72337F528008BD1FF /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF1F7D62337F528008BD1FF /* AddressBook.framework */; };
 		BAF1F7D92337F530008BD1FF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF1F7D82337F530008BD1FF /* SystemConfiguration.framework */; };
 		BAF1F7DC2337FCCB008BD1FF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF1F7DB2337FCCB008BD1FF /* BaseViewController.swift */; };
+		BAF1F7E023380B3B008BD1FF /* KategoriCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF1F7DE23380B3B008BD1FF /* KategoriCollectionCell.swift */; };
+		BAF1F7E123380B3B008BD1FF /* KategoriCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAF1F7DF23380B3B008BD1FF /* KategoriCollectionCell.xib */; };
+		BAF1F7E323380C44008BD1FF /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAF1F7E223380C44008BD1FF /* HomeVC.xib */; };
+		BAF1F7E623387C61008BD1FF /* ProdukModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF1F7E523387C61008BD1FF /* ProdukModel.swift */; };
+		BAF1F7EA2338A38C008BD1FF /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF1F7E82338A38C008BD1FF /* SearchVC.swift */; };
+		BAF1F7EB2338A38C008BD1FF /* SearchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAF1F7E92338A38C008BD1FF /* SearchVC.xib */; };
+		BAF1F7F32338C967008BD1FF /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF1F7F12338C967008BD1FF /* SearchTableViewCell.swift */; };
+		BAF1F7F42338C967008BD1FF /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAF1F7F22338C967008BD1FF /* SearchTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +51,14 @@
 		BAF1F7D62337F528008BD1FF /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		BAF1F7D82337F530008BD1FF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		BAF1F7DB2337FCCB008BD1FF /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		BAF1F7DE23380B3B008BD1FF /* KategoriCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KategoriCollectionCell.swift; sourceTree = "<group>"; };
+		BAF1F7DF23380B3B008BD1FF /* KategoriCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KategoriCollectionCell.xib; sourceTree = "<group>"; };
+		BAF1F7E223380C44008BD1FF /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		BAF1F7E523387C61008BD1FF /* ProdukModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProdukModel.swift; sourceTree = "<group>"; };
+		BAF1F7E82338A38C008BD1FF /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		BAF1F7E92338A38C008BD1FF /* SearchVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchVC.xib; sourceTree = "<group>"; };
+		BAF1F7F12338C967008BD1FF /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		BAF1F7F22338C967008BD1FF /* SearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +117,7 @@
 		BAF1F7AF23369CEC008BD1FF /* SehatQTest */ = {
 			isa = PBXGroup;
 			children = (
+				BAF1F7E423387C40008BD1FF /* Model */,
 				BAF1F7DA2337FCAB008BD1FF /* Base */,
 				BAF1F7D32337EE92008BD1FF /* SehatQBridgingHeader.h */,
 				BAF1F7D12337EB27008BD1FF /* klien_265540153209-kf9n617pqjqai36cfepi06j9sre44ikl.apps.googleusercontent.com.plist */,
@@ -118,8 +135,11 @@
 		BAF1F7C72336A4B6008BD1FF /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				BAF1F7E72338A359008BD1FF /* Search */,
+				BAF1F7DD23380AD4008BD1FF /* Kategori */,
 				BAF1F7C82336A4D3008BD1FF /* HomeVC.swift */,
 				BAF1F7CA2336A4EC008BD1FF /* HistoryVC.swift */,
+				BAF1F7E223380C44008BD1FF /* HomeVC.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -139,6 +159,42 @@
 				BAF1F7DB2337FCCB008BD1FF /* BaseViewController.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		BAF1F7DD23380AD4008BD1FF /* Kategori */ = {
+			isa = PBXGroup;
+			children = (
+				BAF1F7DE23380B3B008BD1FF /* KategoriCollectionCell.swift */,
+				BAF1F7DF23380B3B008BD1FF /* KategoriCollectionCell.xib */,
+			);
+			path = Kategori;
+			sourceTree = "<group>";
+		};
+		BAF1F7E423387C40008BD1FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BAF1F7E523387C61008BD1FF /* ProdukModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BAF1F7E72338A359008BD1FF /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				BAF1F7F02338C93E008BD1FF /* TableViewCell */,
+				BAF1F7E82338A38C008BD1FF /* SearchVC.swift */,
+				BAF1F7E92338A38C008BD1FF /* SearchVC.xib */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		BAF1F7F02338C93E008BD1FF /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				BAF1F7F12338C967008BD1FF /* SearchTableViewCell.swift */,
+				BAF1F7F22338C967008BD1FF /* SearchTableViewCell.xib */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,8 +259,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAF1F7D0233754A6008BD1FF /* LoginVC.xib in Resources */,
+				BAF1F7F42338C967008BD1FF /* SearchTableViewCell.xib in Resources */,
+				BAF1F7EB2338A38C008BD1FF /* SearchVC.xib in Resources */,
+				BAF1F7E323380C44008BD1FF /* HomeVC.xib in Resources */,
 				BAF1F7BE23369CED008BD1FF /* LaunchScreen.storyboard in Resources */,
 				BAF1F7D22337EB28008BD1FF /* klien_265540153209-kf9n617pqjqai36cfepi06j9sre44ikl.apps.googleusercontent.com.plist in Resources */,
+				BAF1F7E123380B3B008BD1FF /* KategoriCollectionCell.xib in Resources */,
 				BAF1F7BB23369CED008BD1FF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,10 +321,14 @@
 			files = (
 				BAF1F7CB2336A4EC008BD1FF /* HistoryVC.swift in Sources */,
 				BAF1F7B123369CEC008BD1FF /* AppDelegate.swift in Sources */,
+				BAF1F7E623387C61008BD1FF /* ProdukModel.swift in Sources */,
+				BAF1F7EA2338A38C008BD1FF /* SearchVC.swift in Sources */,
 				BAF1F7C62336A224008BD1FF /* LoginVC.swift in Sources */,
 				BAF1F7B923369CEC008BD1FF /* SehatQTest.xcdatamodeld in Sources */,
 				BAF1F7DC2337FCCB008BD1FF /* BaseViewController.swift in Sources */,
 				BAF1F7C92336A4D3008BD1FF /* HomeVC.swift in Sources */,
+				BAF1F7E023380B3B008BD1FF /* KategoriCollectionCell.swift in Sources */,
+				BAF1F7F32338C967008BD1FF /* SearchTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
