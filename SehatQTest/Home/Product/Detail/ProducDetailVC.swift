@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class ProducDetailVC: UIViewController {
 
@@ -18,12 +19,13 @@ class ProducDetailVC: UIViewController {
     
     var productPromo = [ProductPromo]()
     var indexProduct = 0
+    let realm = try! Realm()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.productTitle.text = productPromo[indexProduct].title
         self.productDesc.text = productPromo[indexProduct].description
-        self.productPrice.text = "\(productPromo[indexProduct].price ?? "")"
+        self.productPrice.text = "Price: \(productPromo[indexProduct].price ?? "")"
         self.productImage.sd_setImage(with: URL(string: productPromo[indexProduct].imageUrl!), placeholderImage: UIImage(named: "sehatq"))
         
         if (self.productPromo[indexProduct].loved == 1) {
@@ -38,7 +40,35 @@ class ProducDetailVC: UIViewController {
     }
     
     @IBAction func buyButtonPressed(sender: AnyObject) {
+        let chart = self.saveRealmObject(id: productPromo[indexProduct].id ?? "", imageUrl: productPromo[indexProduct].imageUrl ?? "", title: productPromo[indexProduct].title ?? "")
+        try! realm.write {
+            realm.add(chart)
+        }
+        dismiss(animated: true, completion: nil)
         
+//        let users = realm.objects(ProductModelRealm.self)
+//        print(users.first!.title)
+    }
+    
+    //MARK: REALM
+    func saveRealmObject(id: String, imageUrl: String, title: String) -> ProductModelRealm {
+        let new = ProductModelRealm()
+        new.id = id
+        new.imageUrl = imageUrl
+        new.title = title
+        
+        return new
+    }
+    
+    func deleteRealmObject() {
+        if let product = realm.objects(ProductModelRealm.self).first
+        {
+            try! realm.write {
+                realm.delete(product)
+            }
+            
+            print(realm.objects(ProductModelRealm.self))
+        }
     }
     
     @IBAction func sharedButtonPressed(sender: AnyObject) {

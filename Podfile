@@ -16,5 +16,6 @@ pod 'AlamofireObjectMapper'
 pod 'ObjectMapper'
 pod 'SDWebImage', '~> 5.0'
 pod 'JGProgressHUD'
+pod 'RealmSwift'
 
 end

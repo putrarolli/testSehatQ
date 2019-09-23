@@ -102,6 +102,7 @@ class HomeVC: UIViewController , UICollectionViewDelegate, UICollectionViewDataS
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ProductTableViewCell", for: indexPath) as! ProductTableViewCell
+        cell.selectionStyle = UITableViewCellSelectionStyle.none
         let image = self.productPromo[indexPath.item].imageUrl
         cell.productTitle.text = self.productPromo[indexPath.row].title
         cell.productImage.sd_setImage(with: URL(string: image!), placeholderImage: UIImage(named: "sehatq"))
