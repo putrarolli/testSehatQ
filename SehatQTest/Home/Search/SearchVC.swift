@@ -12,12 +12,6 @@ class SearchVC: UIViewController,UITableViewDataSource, UISearchBarDelegate  {
 
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
-    
-    let data = ["New York, NY", "Los Angeles, CA", "Chicago, IL", "Houston, TX",
-                "Philadelphia, PA", "Phoenix, AZ", "San Diego, CA", "San Antonio, TX",
-                "Dallas, TX", "Detroit, MI", "San Jose, CA", "Indianapolis, IN",
-                "Jacksonville, FL", "San Francisco, CA", "Columbus, OH", "Austin, TX",
-                "Memphis, TN", "Baltimore, MD", "Charlotte, ND", "Fort Worth, TX"]
     var productPromo = [ProductPromo]()
     
     var filteredData: [ProductPromo]!
@@ -26,6 +20,7 @@ class SearchVC: UIViewController,UITableViewDataSource, UISearchBarDelegate  {
         super.viewDidLoad()
         let nib = UINib(nibName: "SearchTableViewCell", bundle: nil)
         self.tableView.register(nib, forCellReuseIdentifier: "SearchTableViewCell")
+        self.tableView.rowHeight = 100
         tableView.dataSource = self
         searchBar.delegate = self
         filteredData = productPromo

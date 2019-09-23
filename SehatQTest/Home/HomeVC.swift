@@ -13,10 +13,12 @@ import AlamofireObjectMapper
 import SDWebImage
 import JGProgressHUD
 
-class HomeVC: UIViewController , UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UISearchBarDelegate{
+class HomeVC: UIViewController , UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UISearchBarDelegate,
+            UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet var collectionView: UICollectionView!
     @IBOutlet var seacrhProduct: UISearchBar!
+    @IBOutlet weak var tableView: UITableView!
     let hud = JGProgressHUD(style: .dark)
 
     var category = [Category]()
@@ -25,8 +27,19 @@ class HomeVC: UIViewController , UICollectionViewDelegate, UICollectionViewDataS
     override func viewDidLoad() {
         super.viewDidLoad()
         registerCollectionView()
+        registerTableView()
         requestData()
         setUpNavBar()
+    }
+    
+    private func registerTableView() {
+        let nib = UINib(nibName: "ProductTableViewCell", bundle: nil)
+        self.tableView.register(nib, forCellReuseIdentifier: "ProductTableViewCell")
+        self.tableView.estimatedRowHeight = 130
+        self.tableView.rowHeight = 130
+        
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
     }
     
     func setUpNavBar() {
@@ -69,11 +82,53 @@ class HomeVC: UIViewController , UICollectionViewDelegate, UICollectionViewDataS
                 self.category = (response.result.value?[0].data?.category)!
                 self.productPromo = (response.result.value?[0].data?.productPromo)!
                 self.collectionView.reloadData()
+                self.tableView.reloadData()
             }
-            self.hud.dismiss(afterDelay: 2.0)
+            self.hud.dismiss()
         }
     }
     
+    //MARK: TABLEVIEW PRODUCT
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailProduct = ProducDetailVC()
+        detailProduct.productPromo = self.productPromo
+        detailProduct.indexProduct = indexPath.item
+        self.present(detailProduct, animated: true, completion: nil)
+    }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 130
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ProductTableViewCell", for: indexPath) as! ProductTableViewCell
+        let image = self.productPromo[indexPath.item].imageUrl
+        cell.productTitle.text = self.productPromo[indexPath.row].title
+        cell.productImage.sd_setImage(with: URL(string: image!), placeholderImage: UIImage(named: "sehatq"))
+        cell.actionBlock = {
+            if (self.productPromo[indexPath.item].loved == 1) {
+                self.productPromo[indexPath.item].loved = 0
+            }else {
+                self.productPromo[indexPath.item].loved = 1
+            }
+            tableView.reloadRows(at: [indexPath], with: .automatic)
+        }
+        
+        if (self.productPromo[indexPath.item].loved == 1) {
+            cell.productLove.setImage(UIImage(named: "heart_pink"), for: .normal)
+        }else {
+            cell.productLove.setImage(UIImage(named: "heart_white"), for: .normal)
+
+        }
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.productPromo.count
+    }
+    
+    //MARK: COLLECTION VIEW CATEGORY
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }

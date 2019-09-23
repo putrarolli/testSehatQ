@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8646B509529FDA5328843600 /* Pods_SehatQTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC70BBD23FD803D7BB7CB16 /* Pods_SehatQTest.framework */; };
+		BAA987512338F33300A9B8F9 /* ProducDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA9874F2338F33300A9B8F9 /* ProducDetailVC.swift */; };
+		BAA987522338F33300A9B8F9 /* ProducDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAA987502338F33300A9B8F9 /* ProducDetailVC.xib */; };
 		BAF1F7B123369CEC008BD1FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF1F7B023369CEC008BD1FF /* AppDelegate.swift */; };
 		BAF1F7B923369CEC008BD1FF /* SehatQTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BAF1F7B723369CEC008BD1FF /* SehatQTest.xcdatamodeld */; };
 		BAF1F7BB23369CED008BD1FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAF1F7BA23369CED008BD1FF /* Assets.xcassets */; };
@@ -29,12 +31,16 @@
 		BAF1F7EB2338A38C008BD1FF /* SearchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAF1F7E92338A38C008BD1FF /* SearchVC.xib */; };
 		BAF1F7F32338C967008BD1FF /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF1F7F12338C967008BD1FF /* SearchTableViewCell.swift */; };
 		BAF1F7F42338C967008BD1FF /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAF1F7F22338C967008BD1FF /* SearchTableViewCell.xib */; };
+		BAF1F7F82338E25C008BD1FF /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF1F7F62338E25C008BD1FF /* ProductTableViewCell.swift */; };
+		BAF1F7F92338E25C008BD1FF /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAF1F7F72338E25C008BD1FF /* ProductTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5F3848B68949E7A604D83F71 /* Pods-SehatQTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SehatQTest.release.xcconfig"; path = "Target Support Files/Pods-SehatQTest/Pods-SehatQTest.release.xcconfig"; sourceTree = "<group>"; };
 		64A2B169390E583E3C93391D /* Pods-SehatQTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SehatQTest.debug.xcconfig"; path = "Target Support Files/Pods-SehatQTest/Pods-SehatQTest.debug.xcconfig"; sourceTree = "<group>"; };
 		8AC70BBD23FD803D7BB7CB16 /* Pods_SehatQTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SehatQTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAA9874F2338F33300A9B8F9 /* ProducDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProducDetailVC.swift; sourceTree = "<group>"; };
+		BAA987502338F33300A9B8F9 /* ProducDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProducDetailVC.xib; sourceTree = "<group>"; };
 		BAF1F7AD23369CEC008BD1FF /* SehatQTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SehatQTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAF1F7B023369CEC008BD1FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAF1F7B823369CEC008BD1FF /* SehatQTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SehatQTest.xcdatamodel; sourceTree = "<group>"; };
@@ -59,6 +65,8 @@
 		BAF1F7E92338A38C008BD1FF /* SearchVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchVC.xib; sourceTree = "<group>"; };
 		BAF1F7F12338C967008BD1FF /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		BAF1F7F22338C967008BD1FF /* SearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
+		BAF1F7F62338E25C008BD1FF /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		BAF1F7F72338E25C008BD1FF /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +102,15 @@
 				5F3848B68949E7A604D83F71 /* Pods-SehatQTest.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		BAA9874E2338F2D900A9B8F9 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				BAA9874F2338F33300A9B8F9 /* ProducDetailVC.swift */,
+				BAA987502338F33300A9B8F9 /* ProducDetailVC.xib */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		BAF1F7A423369CEC008BD1FF = {
@@ -135,6 +152,7 @@
 		BAF1F7C72336A4B6008BD1FF /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				BAF1F7F52338E238008BD1FF /* Product */,
 				BAF1F7E72338A359008BD1FF /* Search */,
 				BAF1F7DD23380AD4008BD1FF /* Kategori */,
 				BAF1F7C82336A4D3008BD1FF /* HomeVC.swift */,
@@ -195,6 +213,16 @@
 				BAF1F7F22338C967008BD1FF /* SearchTableViewCell.xib */,
 			);
 			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		BAF1F7F52338E238008BD1FF /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				BAA9874E2338F2D900A9B8F9 /* Detail */,
+				BAF1F7F62338E25C008BD1FF /* ProductTableViewCell.swift */,
+				BAF1F7F72338E25C008BD1FF /* ProductTableViewCell.xib */,
+			);
+			path = Product;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,7 +292,9 @@
 				BAF1F7E323380C44008BD1FF /* HomeVC.xib in Resources */,
 				BAF1F7BE23369CED008BD1FF /* LaunchScreen.storyboard in Resources */,
 				BAF1F7D22337EB28008BD1FF /* klien_265540153209-kf9n617pqjqai36cfepi06j9sre44ikl.apps.googleusercontent.com.plist in Resources */,
+				BAA987522338F33300A9B8F9 /* ProducDetailVC.xib in Resources */,
 				BAF1F7E123380B3B008BD1FF /* KategoriCollectionCell.xib in Resources */,
+				BAF1F7F92338E25C008BD1FF /* ProductTableViewCell.xib in Resources */,
 				BAF1F7BB23369CED008BD1FF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,6 +356,8 @@
 				BAF1F7C62336A224008BD1FF /* LoginVC.swift in Sources */,
 				BAF1F7B923369CEC008BD1FF /* SehatQTest.xcdatamodeld in Sources */,
 				BAF1F7DC2337FCCB008BD1FF /* BaseViewController.swift in Sources */,
+				BAF1F7F82338E25C008BD1FF /* ProductTableViewCell.swift in Sources */,
+				BAA987512338F33300A9B8F9 /* ProducDetailVC.swift in Sources */,
 				BAF1F7C92336A4D3008BD1FF /* HomeVC.swift in Sources */,
 				BAF1F7E023380B3B008BD1FF /* KategoriCollectionCell.swift in Sources */,
 				BAF1F7F32338C967008BD1FF /* SearchTableViewCell.swift in Sources */,
